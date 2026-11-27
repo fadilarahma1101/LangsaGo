@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d3b32">
+  <meta name="description" content="LangsaGo membantu menjelajahi wisata, kuliner, dan aktivitas Kota Langsa.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; frame-ancestors 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; upgrade-insecure-requests">
+  <title>LangsaGo — Jelajahi Kota Langsa</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#konten">Lewati ke konten</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#beranda" aria-label="LangsaGo, beranda"><span class="brand-mark">L</span><span>Langsa<span class="brand-accent">Go</span><small>Jelajahi lebih dekat</small></span></a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Buka navigasi">☰</button>
+      <nav id="mainNav" class="main-nav" aria-label="Navigasi utama">
+        <a href="#jelajah">Jelajah</a><a href="#rute">Rute</a><a href="#agenda">Agenda</a><a href="#kuliner">Kuliner</a>
+        <a class="nav-cta" href="#badge">Badge Saya <span aria-hidden="true">✦</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="konten">
+    <section class="hero" id="beranda">
+      <div class="hero-pattern" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> CITY GUIDE • KOTA LANGSA</p>
+          <h1>Satu kota,<br><em>banyak cerita.</em></h1>
+          <p class="hero-lead">Temukan pesona alam, jejak budaya, agenda seru, dan cita rasa lokal Kota Langsa dalam satu perjalanan.</p>
+          <div class="hero-actions"><a class="button button-light" href="#jelajah">Mulai Jelajahi <span>↗</span></a><a class="text-link" href="#rute">Susun perjalanan <span>→</span></a></div>
+          <div class="hero-note"><span class="note-icon">✦</span><span><strong>LangsaGo</strong><br>Teman perjalananmu di Langsa</span></div>
+        </div>
+        <div class="hero-art" aria-label="Ilustrasi suasana alam dan kota Langsa">
+          <div class="sun"></div><div class="hill hill-back"></div><div class="hill hill-front"></div>
+          <div class="mangrove m1"><i></i><b></b></div><div class="mangrove m2"><i></i><b></b></div>
+          <div class="water"></div><div class="art-label"><span>01 / 06</span><strong>Temukan sisi terbaik Langsa</strong></div>
+          <div class="floating-stamp">EXPLORE<br><b>LANGSA</b></div>
+        </div>
+      </div>
+      <div class="hero-bottom"><div class="container hero-bottom-inner"><span>JELAJAHI DENGAN CARA BARU</span><span>ALAM · BUDAYA · KULINER · KOMUNITAS</span></div></div>
+    </section>
+
+    <section class="quick-search container" aria-label="Pencarian cepat">
+      <div><span class="search-symbol">⌕</span><label class="sr-only" for="globalSearch">Cari destinasi atau kuliner</label><input id="globalSearch" type="search" placeholder="Cari tempat, kuliner, atau pengalaman..."></div>
+      <a href="#jelajah" class="search-submit">Jelajahi <span>→</span></a>
+    </section>
+
+    <section class="section container" id="jelajah">
+      <div class="section-heading"><div><p class="eyebrow dark">PILIH PETUALANGANMU</p><h2>Jelajahi <em>Langsa</em></h2><p class="section-desc">Dari rimbunnya mangrove hingga landmark bersejarah, mulai dari sini.</p></div><a class="inline-link" href="#peta">Lihat peta & lokasi ↗</a></div>
+      <div class="category-row" id="categoryFilters" aria-label="Filter kategori">
+        <button class="chip active" type="button" data-category="Semua">Semua</button><button class="chip" type="button" data-category="Alam">Alam</button><button class="chip" type="button" data-category="Budaya">Budaya</button><button class="chip" type="button" data-category="Landmark">Landmark</button><button class="chip" type="button" data-category="Ruang publik">Ruang publik</button>
+      </div>
+      <div class="destination-grid" id="destinationGrid" aria-live="polite"></div>
+    </section>
+
+    <section class="map-section" id="peta"><div class="container map-layout">
+      <div><p class="eyebrow">PETA EKSPLORASI</p><h2>Langsa ada<br>di <em>genggamanmu.</em></h2><p class="section-desc light-desc">Pilih destinasi untuk membuka petunjuk arah. Lokasi dan detail operasional perlu dikonfirmasi kepada pengelola sebelum perjalanan.</p><div class="map-legend"><span><i class="legend-dot green"></i> Alam</span><span><i class="legend-dot gold"></i> Budaya & landmark</span><span><i class="legend-dot blue"></i> Ruang publik</span></div><a class="button button-light" href="https://www.openstreetmap.org/search?query=Kota%20Langsa%2C%20Aceh" target="_blank" rel="noopener noreferrer">Buka peta Langsa ↗</a></div>
+      <div class="map-card"><div class="map-topline"><span>DESTINASI PILIHAN</span><span class="live-dot">● PETA EKSTERNAL</span></div><div class="map-visual"><div class="map-road road-one"></div><div class="map-road road-two"></div><div class="map-river"></div><span class="map-place place-one">🌿 Mangrove Kuala Langsa</span><span class="map-place place-two">🏛️ Balee Juang</span><span class="map-place place-three">🕌 Masjid Agung</span><span class="map-pin pin-one">1</span><span class="map-pin pin-two">2</span><span class="map-pin pin-three">3</span><span class="map-town">KOTA LANGSA</span></div><p class="map-foot">Ilustrasi area — bukan peta navigasi presisi.</p></div>
+    </div></section>
+
+    <section class="section container itinerary-section" id="rute">
+      <div class="section-heading"><div><p class="eyebrow dark">SMART ITINERARY</p><h2>Rute yang pas,<br><em>cerita yang berkesan.</em></h2><p class="section-desc">Pilih gaya perjalanan. LangsaGo menyusun urutan kunjungan awal untukmu.</p></div></div>
+      <div class="itinerary-panel"><div class="itinerary-options"><button class="route-option selected" type="button" data-route="alam"><span class="route-icon">🌳</span><span><strong>Wisata Alam</strong><small>Nuansa hijau & pesisir</small></span><span class="route-arrow">↗</span></button><button class="route-option" type="button" data-route="pusat"><span class="route-icon">🏙️</span><span><strong>Jalan Kaki Pusat Kota</strong><small>Landmark & ruang publik</small></span><span class="route-arrow">↗</span></button><button class="route-option" type="button" data-route="lokal"><span class="route-icon">🚶</span><span><strong>Ruang Publik Lokal</strong><small>Aktivitas santai warga</small></span><span class="route-arrow">↗</span></button></div><div class="route-result"><div class="result-kicker">REKOMENDASI PERJALANAN</div><h3 id="routeTitle">Sehari menyapa alam Langsa</h3><p id="routeDescription">Urutan kunjungan tematik untuk inspirasi perjalanan. Sesuaikan waktu dan kondisi lapangan.</p><ol id="routeStops" class="route-stops"></ol><a id="routeMapLink" class="button button-dark" href="https://www.google.com/maps/dir/?api=1&destination=Kuala%20Langsa" target="_blank" rel="noopener noreferrer">Lihat rute di Maps ↗</a></div></div>
+    </section>
+
+    <section class="events-section" id="agenda"><div class="container">
+      <div class="section-heading"><div><p class="eyebrow dark">LANGSA LIVE</p><h2>Ada apa di <em>Langsa?</em></h2><p class="section-desc">Ruang untuk menemukan agenda kota, komunitas, dan kegiatan publik.</p></div><span class="section-tag">KALENDER KOTA</span></div>
+      <div class="event-notice"><span>ⓘ</span><p>Jadwal berikut merupakan contoh tampilan. Periksa kanal resmi penyelenggara untuk tanggal dan informasi acara terbaru.</p></div>
+      <div class="event-grid" id="eventGrid"></div>
+    </div></section>
+
+    <section class="section container taste-section" id="kuliner">
+      <div class="section-heading"><div><p class="eyebrow dark">NEARBY TASTE</p><h2>Rasa lokal, <em>cerita istimewa.</em></h2><p class="section-desc">Temukan kuliner dan usaha lokal untuk melengkapi perjalananmu.</p></div><a class="inline-link" href="https://www.google.com/maps/search/kuliner+Kota+Langsa" target="_blank" rel="noopener noreferrer">Cari di Maps ↗</a></div>
+      <div class="taste-grid" id="tasteGrid"></div>
+    </section>
+
+    <section class="badge-section" id="badge"><div class="container badge-layout"><div><p class="eyebrow">JELAJAH BADGE</p><h2>Setiap langkah<br>punya <em>cerita.</em></h2><p class="section-desc light-desc">Kumpulkan lencana dengan menandai destinasi yang sudah kamu kunjungi. Check-in pada demo ini tersimpan di perangkatmu.</p><div class="badge-progress"><div class="progress-label"><span>Progres eksplorasi</span><strong id="badgeCount">0 / 6</strong></div><div class="progress-track"><span id="badgeProgress"></span></div></div><p class="badge-disclaimer">Badge demo tidak menghasilkan voucher atau klaim kunjungan resmi.</p></div><div class="badge-collection" id="badgeCollection"></div></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-top"><a class="brand footer-brand" href="#beranda"><span class="brand-mark">L</span><span>Langsa<span class="brand-accent">Go</span><small>Jelajahi lebih dekat</small></span></a><p>Mengenal Langsa, satu perjalanan pada satu waktu.</p><a class="back-top" href="#beranda">Kembali ke atas ↑</a></div><div class="container footer-bottom"><span>© <span id="year"></span> LangsaGo • Konsep city guide Kota Langsa</span><span>Informasi contoh — verifikasi sebelum berkunjung.</span></div></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
