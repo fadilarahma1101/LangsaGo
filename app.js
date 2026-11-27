@@ -1,14 +1,7 @@
 'use strict';
 
 const destinations = [
-  {id:'mangrove',name:'Hutan Mangrove Kuala Langsa',category:'Alam',emoji:'🌳',art:'art-nature',desc:'Jelajahi kawasan mangrove dan suasana pesisir Kuala Langsa.',note:'Wisata alam & pesisir',query:'Hutan Mangrove Kuala Langsa Aceh'},
-  {id:'hutan-kota',name:'Taman Hutan Kota',category:'Alam',emoji:'🌿',art:'art-nature',desc:'Ruang hijau untuk menikmati suasana teduh di tengah kota.',note:'Ruang hijau',query:'Taman Hutan Kota Langsa Aceh'},
-  {id:'balee-juang',name:'Museum Balee Juang',category:'Budaya',emoji:'🏛️',art:'art-city',desc:'Kenali jejak sejarah dan warisan budaya Kota Langsa.',note:'Sejarah & budaya',query:'Museum Balee Juang Langsa'},
-  {id:'masjid',name:'Masjid Agung Darul Falah',category:'Landmark',emoji:'🕌',art:'art-mosque',desc:'Salah satu landmark religi yang dikenal di Kota Langsa.',note:'Landmark religi',query:'Masjid Agung Darul Falah Langsa'},
-  {id:'bambu',name:'Taman Bambu Runcing / Lapangan Merdeka',category:'Ruang publik',emoji:'🌴',art:'art-park',desc:'Ruang publik untuk bersantai dan menikmati aktivitas kota.',note:'Ruang publik',query:'Taman Bambu Runcing Lapangan Merdeka Langsa'},
-  {id:'commodore',name:'Tugu Simpang Commodore',category:'Landmark',emoji:'📍',art:'art-landmark',desc:'Landmark persimpangan yang menjadi penanda kawasan kota.',note:'Landmark kota',query:'Tugu Simpang Commodore Langsa'}
-];
-{
+  {
   id:'mangrove',
   name:'Hutan Mangrove Kuala Langsa',
   category:'Alam',
@@ -19,7 +12,7 @@ const destinations = [
   note:'Wisata alam & pesisir',
   query:'Hutan Mangrove Kuala Langsa Aceh'
 },
-{
+  {
   id:'hutan-kota',
   name:'Taman Hutan Kota',
   category:'Alam',
@@ -30,7 +23,7 @@ const destinations = [
   note:'Ruang hijau',
   query:'Taman Hutan Kota Langsa Aceh'
 },
-{
+  {
   id:'balee-juang',
   name:'Museum Balee Juang',
   category:'Budaya',
@@ -41,7 +34,7 @@ const destinations = [
   note:'Sejarah & budaya',
   query:'Museum Balee Juang Langsa Aceh'
 },
-{
+  {
   id:'masjid',
   name:'Masjid Agung Darul Falah',
   category:'Landmark',
@@ -52,7 +45,7 @@ const destinations = [
   note:'Wisata religi',
   query:'Masjid Agung Darul Falah Kota Langsa'
 },
-{
+  {
   id:'bambu-runcing',
   name:'Taman Bambu Runcing',
   category:'Ruang publik',
@@ -73,7 +66,11 @@ const destinations = [
   desc:'Kenali salah satu penanda kawasan dan ikon persimpangan Kota Langsa.',
   note:'Landmark kota',
   query:'Tugu Simpang Commodore Kota Langsa Aceh'
-};
+}
+];
+
+
+
 const events = [
   {day:'01',month:'AGENDA',title:'Car Free Day',place:'Area pusat kota',kind:'OLAHRAGA & KOMUNITAS',desc:'Contoh agenda aktivitas warga pada akhir pekan.'},
   {day:'02',month:'AGENDA',title:'Bazar UMKM Lokal',place:'Area Lapangan Merdeka',kind:'KULINER & UMKM',desc:'Contoh ruang promosi produk dan kuliner lokal.'},
