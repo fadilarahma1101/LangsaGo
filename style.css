@@ -19,3 +19,23 @@
   height: 100%;
   object-fit: cover;
 }
+
+.destination-art {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.destination-art img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.destination-art .card-category {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 2;
+}
