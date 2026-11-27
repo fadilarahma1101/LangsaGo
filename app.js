@@ -7,7 +7,7 @@ const destinations = [
   category:'Alam',
   emoji:'🌳',
   art:'art-nature',
-  image:'assets/mangrove.jpg',
+  image:'assets/mangrove.jpeg',
   desc:'Jelajahi kawasan mangrove dan suasana pesisir Kuala Langsa.',
   note:'Wisata alam & pesisir',
   query:'Hutan Mangrove Kuala Langsa Aceh'
@@ -18,7 +18,7 @@ const destinations = [
   category:'Alam',
   emoji:'🌿',
   art:'art-nature',
-  image:'assets/hutan-kota.jpg',
+  image:'assets/hutan-kota.jpeg',
   desc:'Ruang hijau untuk menikmati suasana teduh di tengah Kota Langsa.',
   note:'Ruang hijau',
   query:'Taman Hutan Kota Langsa Aceh'
@@ -29,7 +29,7 @@ const destinations = [
   category:'Budaya',
   emoji:'🏛️',
   art:'art-culture',
-  image:'assets/balee-juang.jpg',
+  image:'assets/balee-juang.jpeg',
   desc:'Kenali jejak sejarah dan warisan budaya Kota Langsa.',
   note:'Sejarah & budaya',
   query:'Museum Balee Juang Langsa Aceh'
@@ -40,7 +40,7 @@ const destinations = [
   category:'Landmark',
   emoji:'🕌',
   art:'art-landmark',
-  image:'assets/masjid.jpg',
+  image:'assets/masjid.jpeg',
   desc:'Kunjungi salah satu ikon religi dan landmark kebanggaan Kota Langsa.',
   note:'Wisata religi',
   query:'Masjid Agung Darul Falah Kota Langsa'
@@ -51,7 +51,7 @@ const destinations = [
   category:'Ruang publik',
   emoji:'🎋',
   art:'art-public',
-  image:'assets/bambu-runcing.jpg',
+  image:'assets/bambu-runcing.jpeg',
   desc:'Nikmati ruang terbuka kota untuk bersantai, berolahraga, dan berkumpul.',
   note:'Ruang publik & olahraga',
   query:'Taman Bambu Runcing Lapangan Merdeka Langsa'
@@ -62,7 +62,7 @@ const destinations = [
   category:'Landmark',
   emoji:'📍',
   art:'art-landmark',
-  image:'assets/commodore.jpg',
+  image:'assets/commodore.jpeg',
   desc:'Kenali salah satu penanda kawasan dan ikon persimpangan Kota Langsa.',
   note:'Landmark kota',
   query:'Tugu Simpang Commodore Kota Langsa Aceh'
