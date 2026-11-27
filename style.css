@@ -39,3 +39,60 @@
   left: 14px;
   z-index: 2;
 }
+
+/* Animasi Hero LangsaGo */
+
+.hero-art {
+  animation: heroFloat 6s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.hero-image {
+  animation: heroZoom 14s ease-in-out infinite alternate;
+  transition: transform .6s ease;
+}
+
+.hero-art:hover .hero-image {
+  transform: scale(1.06);
+}
+
+.floating-stamp {
+  animation: stampFloat 4s ease-in-out infinite;
+}
+
+@keyframes heroFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes heroZoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.07);
+  }
+}
+
+@keyframes stampFloat {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-9px) rotate(5deg);
+  }
+}
+
+/* Menghormati preferensi pengurangan animasi */
+@media (prefers-reduced-motion: reduce) {
+  .hero-art,
+  .hero-image,
+  .floating-stamp {
+    animation: none !important;
+    transition: none !important;
+  }
+}
