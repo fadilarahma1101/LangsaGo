@@ -8,6 +8,72 @@ const destinations = [
   {id:'bambu',name:'Taman Bambu Runcing / Lapangan Merdeka',category:'Ruang publik',emoji:'🌴',art:'art-park',desc:'Ruang publik untuk bersantai dan menikmati aktivitas kota.',note:'Ruang publik',query:'Taman Bambu Runcing Lapangan Merdeka Langsa'},
   {id:'commodore',name:'Tugu Simpang Commodore',category:'Landmark',emoji:'📍',art:'art-landmark',desc:'Landmark persimpangan yang menjadi penanda kawasan kota.',note:'Landmark kota',query:'Tugu Simpang Commodore Langsa'}
 ];
+{
+  id:'mangrove',
+  name:'Hutan Mangrove Kuala Langsa',
+  category:'Alam',
+  emoji:'🌳',
+  art:'art-nature',
+  image:'assets/mangrove.jpg',
+  desc:'Jelajahi kawasan mangrove dan suasana pesisir Kuala Langsa.',
+  note:'Wisata alam & pesisir',
+  query:'Hutan Mangrove Kuala Langsa Aceh'
+},
+{
+  id:'hutan-kota',
+  name:'Taman Hutan Kota',
+  category:'Alam',
+  emoji:'🌿',
+  art:'art-nature',
+  image:'assets/hutan-kota.jpg',
+  desc:'Ruang hijau untuk menikmati suasana teduh di tengah Kota Langsa.',
+  note:'Ruang hijau',
+  query:'Taman Hutan Kota Langsa Aceh'
+},
+{
+  id:'balee-juang',
+  name:'Museum Balee Juang',
+  category:'Budaya',
+  emoji:'🏛️',
+  art:'art-culture',
+  image:'assets/balee-juang.jpg',
+  desc:'Kenali jejak sejarah dan warisan budaya Kota Langsa.',
+  note:'Sejarah & budaya',
+  query:'Museum Balee Juang Langsa Aceh'
+},
+{
+  id:'masjid',
+  name:'Masjid Agung Darul Falah',
+  category:'Landmark',
+  emoji:'🕌',
+  art:'art-landmark',
+  image:'assets/masjid.jpg',
+  desc:'Kunjungi salah satu ikon religi dan landmark kebanggaan Kota Langsa.',
+  note:'Wisata religi',
+  query:'Masjid Agung Darul Falah Kota Langsa'
+},
+{
+  id:'bambu-runcing',
+  name:'Taman Bambu Runcing',
+  category:'Ruang publik',
+  emoji:'🎋',
+  art:'art-public',
+  image:'assets/bambu-runcing.jpg',
+  desc:'Nikmati ruang terbuka kota untuk bersantai, berolahraga, dan berkumpul.',
+  note:'Ruang publik & olahraga',
+  query:'Taman Bambu Runcing Lapangan Merdeka Langsa'
+},
+{
+  id:'commodore',
+  name:'Tugu Simpang Commodore',
+  category:'Landmark',
+  emoji:'📍',
+  art:'art-landmark',
+  image:'assets/commodore.jpg',
+  desc:'Kenali salah satu penanda kawasan dan ikon persimpangan Kota Langsa.',
+  note:'Landmark kota',
+  query:'Tugu Simpang Commodore Kota Langsa Aceh'
+};
 const events = [
   {day:'01',month:'AGENDA',title:'Car Free Day',place:'Area pusat kota',kind:'OLAHRAGA & KOMUNITAS',desc:'Contoh agenda aktivitas warga pada akhir pekan.'},
   {day:'02',month:'AGENDA',title:'Bazar UMKM Lokal',place:'Area Lapangan Merdeka',kind:'KULINER & UMKM',desc:'Contoh ruang promosi produk dan kuliner lokal.'},
@@ -49,7 +115,13 @@ function renderDestinations(category='Semua',term=''){
   filtered.forEach(d=>{
     const card=document.createElement('article');card.className='destination-card';
     const art=safeText('div','',`destination-art ${d.art}`);
-    art.append(safeText('span',d.category,'card-category'),safeText('span',d.emoji,'art-emoji'));
+
+const img=document.createElement('img');
+img.src=d.image;
+img.alt=d.name;
+img.loading='lazy';
+
+art.append(img,safeText('span',d.category,'card-category'));
     const body=document.createElement('div');body.className='destination-body';
     body.append(safeText('h3',d.name),safeText('p',d.desc));
     const footer=document.createElement('div');footer.className='card-footer';
