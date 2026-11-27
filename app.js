@@ -7,7 +7,7 @@ const destinations = [
   category:'Alam',
   emoji:'🌳',
   art:'art-nature',
-  image:'assets/mangrove.jpeg',
+  image:'assets/manggrove.jpeg',
   desc:'Jelajahi kawasan mangrove dan suasana pesisir Kuala Langsa.',
   note:'Wisata alam & pesisir',
   query:'Hutan Mangrove Kuala Langsa Aceh'
